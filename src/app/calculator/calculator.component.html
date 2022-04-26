@@ -1,0 +1,11 @@
+<div>
+  <input type="number" [(ngModel)]="firstOperand" (change)="caculate()">
+  <select [(ngModel)]="operand" (change)="caculate()">
+    <option value="ADD">+</option>
+    <option value="SUBTRACT">-</option>
+    <option value="MULTIPLY">*</option>
+    <option value="DIVIDE">/</option>
+  </select>
+  <input type="number" [(ngModel)]="secondOperand" (change)="caculate()">
+  <span>={{result}}</span>
+</div>
